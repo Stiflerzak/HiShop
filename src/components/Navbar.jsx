@@ -1,35 +1,57 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
+import SearchIcon from "@mui/icons-material/Search";
 
-const Container = styled.div
-`height: 60px;
-`
-const Wrapper= styled.div`
-padding: 10px 20px;
-display:flex;
-justify-content:space-between;
-`
-const Left= styled.div`
-width: 33.3%
-`
-const Center= styled.div`
-width: 33.3%
-`
-const Right= styled.div`
-width: 33.3%
-`
+const Container = styled.div`
+  height: 60px;
+`;
+const Wrapper = styled.div`
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+`;
+const Left = styled.div`
+  flex: 1;
+  display: flex;
+  align-items: center;
+`;
+const Language = styled.span`
+  font-size: 40px;
+  cursor: pointer;
+`;
+const SearchContainer = styled.div`
+  border: 0.5px solid lightgray;
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+  padding: 5px;
+`;
+const Input = styled.input`
+border:none;
+`;
 
-
-
+const Center = styled.div`
+  flex: 1;
+`;
+const Right = styled.div`
+  flex: 1;
+`;
 
 export const Navbar = () => {
   return (
     <Container>
-    <Wrapper>
-   <Left>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</Left>
-   <Center>Center</Center>
-   <Right>Right</Right>
-    </Wrapper>    
+      <Wrapper>
+        <Left>
+          <Language>EN</Language>
+
+          <SearchContainer>
+            <Input />
+            <SearchIcon />
+          </SearchContainer>
+        </Left>
+        <Center>Center</Center>
+        <Right>Right</Right>
+      </Wrapper>
     </Container>
-  )
-}
+  );
+};
