@@ -31,6 +31,11 @@ color: white;
 const Button = styled.button`
 border: none;
 padding: 10px;
+background-color: #9ACD32;
+color: white;
+font-size: 20px;
+cursor: pointer;
+font-weight: 600;
 `;
 
 export const CategoryItem = ({category}) => {
