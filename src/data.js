@@ -22,8 +22,25 @@ bg:"#FFFAF0",
     description:"13.3-inch, 2,560 x 1,600 Retina display 256 SSD, 512GB SSD",   
     bg:"#FFFAF0",
 }
+];
 
-
-
-
-]
+export const categories = [
+    {
+        id:1,
+    img:"https://phonesstorekenya.com/wp-content/uploads/2022/09/Tecno-Phantom-X2-Pro-5G.jpg",
+    title:"SAMSUNG",     
+    },
+    
+    {
+        id:2,
+    img:"https://phonesstorekenya.com/wp-content/uploads/2022/05/iPhone-14-Pro-Max-Purple.jpg",
+    title:"Apple iPhone",    
+    },
+    
+    {
+        id:3,
+        img:"https://phonesstorekenya.com/wp-content/uploads/2022/09/Tecno-Phantom-X2-Pro-5G-a.jpg",
+        title:"Tecno",             
+    }
+    ]
+    
