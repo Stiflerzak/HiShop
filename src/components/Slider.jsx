@@ -30,21 +30,22 @@ margin:auto;
 z-index: 2;
 `;
 const Wrapper= styled.div`
-height: 100%
+height: 100%;
 display:flex;
-transform: translateX({props => props.slideIndex * -100}vw)
+transform: translateX(${props => props.slideIndex * -100}vw);
 `;
 const Slide= styled.div`
 width: 100vw;
 height: 100vh;
 display: flex;
 align-items: center;
-background-color:${props=> props.bg}
+background-color: ${props=> props.bg}
 `;
 
 const ImgContainer= styled.div`
 flex: 1;
 height:100%;
+
 `;
 
 const InfoContainer= styled.div`
